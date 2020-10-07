@@ -7,3 +7,13 @@ const manExponent = (base, power) => {
 };
 
 console.log(manExponent(4, 4));
+
+// Jordans solution
+
+const toThePowerOf = (num, exp) => {
+  const items = Array(exp).fill(num);
+  const reducer = (total, currentValue) => total * currentValue;
+  return items.reduce(reducer);
+};
+
+console.log(toThePowerOf(2, 3));
